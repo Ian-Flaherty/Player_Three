@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :movies
+  resources :likes
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
   resources :users
