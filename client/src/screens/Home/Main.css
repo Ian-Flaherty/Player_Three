@@ -1,0 +1,50 @@
+.main-frame {
+  display: flex;
+flex-direction: column;
+align-items: center;
+align-content: center;
+height: 100%;
+width: auto;
+
+
+}
+.movie-poster {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+  
+
+}
+.movie-picture {
+display: flex;
+width:80%;
+
+}
+
+.buttons-row {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+border: thick black 2px;
+
+}
+
+.yes-button {
+display:flex;
+border-radius: 50%;
+background-color: green;
+height: 50px;
+width: 50px;
+justify-content: center;
+align-items: center;
+}
+
+.no-button {
+display: flex;
+border-radius: 50%;
+background-color: red;
+height: 50px;
+width: 50px;
+justify-content: center;
+align-items: center;
+}

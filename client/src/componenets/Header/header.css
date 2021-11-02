@@ -1,0 +1,155 @@
+nav {
+  /* flex: 1; */
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  background-color: red;
+  /* z-index: 3; */
+  color: white;
+  /* flex-wrap: wrap; */
+}
+
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+ font-size: 80px; 
+text-decoration: none;
+}
+
+
+
+.liked-movies-link{
+  font-size: 15px;
+
+}
+
+.Settings-link {
+  font-size: 15px;
+}
+/* .header-logo {
+  display: flex;
+  width: 40vw;
+  justify-content: center;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+  color: black;
+  text-decoration: none;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-family: "Open Sans";
+  color: black;
+}
+.header-links :link {
+  text-decoration: none;
+}
+
+.header-welcome {
+  display: flex;
+  justify-content: flex-end;
+  width: 30vw;
+  font-size: 1.2em;
+  color: black;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  color: black;
+}
+
+.header-link {
+  font-size: 1.2em;
+  color: black;
+}
+
+
+.active {
+  color: black;
+}
+
+@media only screen and (max-width: 1050px) {
+  .header-logo {
+    justify-content: end;
+    white-space: nowrap;
+    padding-left: 2vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .header-logo {
+    font-size: 2.3em;
+  }
+
+  .header-link,
+  .header-welcome {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-logo {
+    width: 100%;
+    padding-left: 5vw;
+    font-size: 2.1em;
+    justify-content: center;
+  }
+
+  .header-welcome {
+    justify-content: center;
+  }
+
+  .header-link,
+  .header-welcome {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .links-container {
+    width: 100%;
+  }
+
+  .header-links {
+    padding-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-logo {
+    white-space: normal;
+    font-size: 1.8em;
+  }
+
+  .header-welcome {
+    width: 90%;
+  }
+
+  .links-container {
+    width: 35%;
+    flex-flow: column wrap;
+    font-size: 0.9em;
+  }
+}
+
+a {
+  color: white;
+  font-size: large;
+} */

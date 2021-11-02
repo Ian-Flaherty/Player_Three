@@ -1,0 +1,13 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.layout-children {
+  flex: 2;
+  width: auto;
+  
+}
