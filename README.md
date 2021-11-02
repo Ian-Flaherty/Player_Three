@@ -23,7 +23,7 @@ LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want
 <details>
 <summary> Heirarchy </summary>
 
-![alt text](readme-assets/hierarchy.png)
+![alt text](readme-assets/higher.png)
 </details>
 
 ## MVP
