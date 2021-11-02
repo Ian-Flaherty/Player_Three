@@ -1,24 +1,14 @@
-# README
+# LYFE - "changing ideas"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want. If you like them they are saved into your saved profile for you to look at any time. Down the road I will want to put an algorithim in that can make the experience even better for the user by collecting previous information from liked and disliked to calculate what the user would like to see.
 
-* Ruby version
+## WireFrames
 
-* System dependencies
+<details>
+<Summary>WireFrame</summary>
 
-* Configuration
+![alt text](ReadMeAssets/wireframes/WireFrame.png)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+</details>
