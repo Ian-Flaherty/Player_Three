@@ -9,6 +9,13 @@ LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want
 <details>
 <Summary>WireFrame</summary>
 
-![alt text](ReadMeAssets/wireframes/WireFrame.png)
+![alt text](readme-assets/wireframes/WireFrame.png)
+
+</details>
+
+<details>
+<Summary>Tables</summary>
+
+![alt text](readme-assets/wireframes/Tables.png)
 
 </details>
