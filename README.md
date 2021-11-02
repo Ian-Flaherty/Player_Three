@@ -16,7 +16,7 @@ LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want
 <details>
 <Summary>Tables</summary>
 
-![alt text](readme-assets/Tables.png)
+![alt text](readme-assets/tables1.png)
 
 </details>
 
