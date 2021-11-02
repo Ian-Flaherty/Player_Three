@@ -22,16 +22,16 @@ LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want
 
 ## MVP
 
-Server (Back End)
-Have a RESTful JSON API.
-Build a Ruby on Rails server, exposing RESTful JSON endpoints.
-Build a database with at least 3 tables:
-There must be at least 1 association between your tables. (1:m or m:m)
-Utilize Rails to define models for interacting with the database.
-Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between your non-User tables
-Note that if you choose to do Authentication, CRUD on your User table does not count toward this requirement.
-Client (Front End)
-Have a working, interactive React app, built using npx create-react-app.
+- Server (Back End)
+- Have a RESTful JSON API.
+- Build a Ruby on Rails server, exposing RESTful JSON endpoints.
+- Build a database with at least 3 tables:
+- There must be at least 1 association between your tables. (1:m or m:m)
+- Utilize Rails to define models for interacting with the database.
+- Implement working generic controller actions for Full CRUD (index, show, create, update, delete) between your non-User tables
+- Note that if you choose to do Authentication, CRUD on your User table does not count toward this requirement.
+- Client (Front End)
+- Have a working, interactive React app, built using npx create-react-app.
 Have at least 8 separate, rendered components in an organized and understandable React file structure.
 Utilize functional or class React components appropriately.
 Utilize state and props in your components efficiently.
@@ -57,5 +57,5 @@ Deploy early and often(this will help to debug small issues before they become l
 Procedural
 Initialize a git repo on Github, with a link to your hosted project.
 Have frequent commits, making a robust commit history at least every day. (75 commits minimum)
-Use effective and safe branching and merging processes.
+- Use effective and safe branching and merging processes.
 
