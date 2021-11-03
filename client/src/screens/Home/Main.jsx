@@ -1,23 +1,19 @@
 import React from "react";
 import "./Main.css";
-import Movies from "../../componenets/Movies/Movies";
+// import Movies from "../../componenets/Movies/Movies";
 import { getMovies } from "../../services/movies";
 import Layout from "../../componenets/Layout/Layout";
 import { useState, useEffect } from "react";
 
-export default function Main(props) {
-  const [searchResults, setSearchResults] = useState(['initial state'])
-  const [movies, setMovies] = useState([])
 
+export default function Main(props) {
+  const [movies, setMovies] = useState([])
+  
 useEffect(() => {
   const fetchMovies = async () => {
     const allMovies = await getMovies()
     setMovies(allMovies)
-      const filteredMovies = allMovies.filter(movie => {
-        return movies
-      })
-      setSearchResults(filteredMovies)
-    
+      
   }
   fetchMovies()
   // eslint-disable-next-line
@@ -29,10 +25,11 @@ useEffect(() => {
     <div>
       <div className="main-frame">
         <div className="movie-poster">
-        <div className='mapped-movies'>
-          {searchResults.map((movie, index) => <Movies key={index} movie={movie} />)}
-        </div>
-            
+              <div className='mapped-movies'>
+                
+              </div>
+              <img src={movies.image_url} alt='default'/>
+            </div>
         </div>
       </div>
       {/* <div className='button-div'> */}
@@ -45,7 +42,7 @@ useEffect(() => {
           </div>
         </div>
       </div>
-    </div>
+    
   </Layout>
   );
 }
