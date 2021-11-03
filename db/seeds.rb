@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.destroy_all
 
-User.create!(username: 'ian', email: 'ianflaherty@yahoo.com', password: '123456')
+@admin = User.create!(username: 'ian', email: 'ianflaherty@yahoo.com', password: '123456')
 
 puts "#{User.count} users created"

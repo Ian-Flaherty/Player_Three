@@ -2,12 +2,13 @@ import React from 'react'
 import Layout from '../../componenets/Layout/Layout'
 import './Settings.css'
 
-export default function Settings() {
+export default function Settings(props) {
+  const { handleLogout } = props;
   return (
     <Layout>
     <div className='submit-div'>
         <h1> Settings</h1>
-        <button className='submit-button' text='Sign Out'/>
+        <button onClick={handleLogout}>Logout</button>
       </div>
       </Layout>
   )
