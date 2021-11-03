@@ -10,3 +10,8 @@ User.destroy_all
 @admin = User.create!(username: 'IanF', email: 'ianflaherty@yahoo.com', password: '123456')
 
 puts "#{User.count} users created"
+
+@movie = Movie.create(title: 'Dune', image_url: 'https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg')
+
+puts "#{Movie.count} movies created"
+

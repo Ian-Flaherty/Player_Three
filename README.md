@@ -59,7 +59,25 @@ LYFE is the App you can say yes or no to movies/photos/recipes/whatever you want
 <Summary>TimeFrame</summary>
 
 ![alt text](readme-assets/wireframes/TimeChart.png)
+- back end 20hrs
+- front end 20hrs
+- react 15hrs
+- deployment 2hrs
 
 </details>
+
+### Libraries and Dependencies
+
+
+
+|     Library      | Description                                |
+| :--------------: | :----------------------------------------- |
+|      React       | A javascript library that creates a front-end via UI components |
+|   React Router   | Enables dynamics routing for a React App |
+| Axios | Sends promise-based, asynchronous HTTP calls from the browser so that the application can perform full CRUD functions. |
+|     JWT     | Encodes and decodes JSON Web Tokens. |
+|  CORS  | Allows backend database to interact with and be accessed by the frontend. |
+
+<br>
 
 
