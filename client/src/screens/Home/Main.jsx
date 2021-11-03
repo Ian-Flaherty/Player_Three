@@ -1,23 +1,11 @@
 import React from "react";
 import "./Main.css";
-// import Movies from "../../componenets/Movies/Movies";
-import { getMovies } from "../../services/movies";
 import Layout from "../../componenets/Layout/Layout";
-import { useState, useEffect } from "react";
+
 
 
 export default function Main(props) {
-  const [movies, setMovies] = useState([])
-  
-useEffect(() => {
-  const fetchMovies = async () => {
-    const allMovies = await getMovies()
-    setMovies(allMovies)
-      
-  }
-  fetchMovies()
-  // eslint-disable-next-line
-}, [])
+  const { movies } = props
 
   return (
     <Layout>
@@ -28,7 +16,9 @@ useEffect(() => {
               <div className='mapped-movies'>
                 
               </div>
-              <img src={movies.image_url} alt='default'/>
+              <div>
+              <img src="https://alternativemovieposters.com/wp-content/uploads/2012/12/socialnetworkbg1.jpg" alt='default'/>
+              </div>
             </div>
         </div>
       </div>
@@ -42,7 +32,6 @@ useEffect(() => {
           </div>
         </div>
       </div>
-    
   </Layout>
   );
 }

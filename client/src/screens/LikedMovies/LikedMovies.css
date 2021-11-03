@@ -1,3 +1,20 @@
 .liked-movies {
   margin-top: 25vh;
 }
+
+.imug {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  height:200px;
+  width: 130px;
+}
+
+.liked-stuff {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  
+}
