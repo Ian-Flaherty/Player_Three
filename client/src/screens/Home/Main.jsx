@@ -5,7 +5,7 @@ import Layout from "../../componenets/Layout/Layout";
 
 
 export default function Main(props) {
-  const { movies } = props;
+  // const { movies } = props;
 
   return (
 
