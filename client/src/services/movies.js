@@ -9,7 +9,7 @@ export const getMovies = async () => {
   }
 };
 
-export const getStory = async (id) => {
+export const getMovie = async (id) => {
   try {
     const response = await api.get(`/movies/${id}`);
     return response.data;
@@ -18,25 +18,25 @@ export const getStory = async (id) => {
   }
 };
 
-export const createStory = async (story) => {
+export const createMovies = async (movie) => {
   try {
-    const response = await api.post("/story-create", story);
+    const response = await api.post("/movie-create", movie);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const updateStory = async (id, story) => {
+export const updateMovies = async (id, movie) => {
   try {
-    const response = await api.put(`/movies/${id}`, story);
+    const response = await api.put(`/movies/${id}`, movie);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const deleteStory = async (id) => {
+export const deleteMovies = async (id) => {
   try {
     const response = await api.delete(`/movies/${id}`);
     return response.data;

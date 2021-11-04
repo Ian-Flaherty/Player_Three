@@ -44,10 +44,10 @@ function App() {
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
       <Switch>
         <Route exact path='/'>
-          <Main/>
-        </Route>
-        <Route exact path='/SignIn'>
           <SignIn handleLogin={handleLogin}/>
+        </Route>
+        <Route exact path='/Home'>
+          <Main/>
         </Route>
         <Route exact path='/SignUp'>
           <SignUp handleRegister={handleRegister}/>

@@ -5,11 +5,12 @@ import Layout from "../../componenets/Layout/Layout";
 
 
 export default function Main(props) {
-  const { movies } = props
+  const { movies } = props;
 
   return (
-    <Layout>
-<div>
+
+<Layout>
+  <div>
     <div>
       <div className="main-frame">
         <div className="movie-poster">
@@ -17,8 +18,12 @@ export default function Main(props) {
                 
               </div>
               <div>
-              <img src="https://alternativemovieposters.com/wp-content/uploads/2012/12/socialnetworkbg1.jpg" alt='default'/>
+                <img className="home-holder" src="https://alternativemovieposters.com/wp-content/uploads/2012/12/socialnetworkbg1.jpg" alt='default' />
+                
+                {/* <img className="home-holder" src={movies.image} alt="broke"/> */}
               </div>
+            
+            </div>
             </div>
         </div>
       </div>
@@ -31,7 +36,7 @@ export default function Main(props) {
             <button className='yes-button'>yes</button>
           </div>
         </div>
-      </div>
+      
   </Layout>
   );
 }

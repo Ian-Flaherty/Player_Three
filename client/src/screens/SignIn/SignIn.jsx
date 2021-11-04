@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './SignIn.css'
 
+
 export default function Login(props) {
   const [formData, setFormData] = useState({
     username: '',
@@ -50,7 +51,8 @@ export default function Login(props) {
       </label>
       <br />
       <button className='register-button'><Link to='/SignUp'>Register</Link></button>
-      <button className='submit-button'>Submit</button>
+        <Link to='/Home'> <button className='submit-button'>Submit</button>
+      </Link>
       </form>
       </Layout>
   );

@@ -7,7 +7,7 @@ export default function Header() {
     <nav>
       <div className='nav'>
         <NavLink className='liked-movies-link' to='/LikedMovies'>Likes</NavLink>
-        <NavLink className='header-title' to='/'>LYFE</NavLink>
+        <NavLink className='header-title' to='/Home'>LYFE</NavLink>
         <NavLink className='Settings-link' to='/Settings'>Settings</NavLink>
         
       

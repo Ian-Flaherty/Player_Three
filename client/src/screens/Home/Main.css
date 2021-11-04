@@ -24,7 +24,8 @@ width:80%;
 .buttons-row {
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: center;
+
 border: thick black 2px;
 
 }
@@ -47,4 +48,9 @@ height: 50px;
 width: 50px;
 justify-content: center;
 align-items: center;
+}
+
+.home-holder {
+  height: 200px;
+  width: 140px;
 }
