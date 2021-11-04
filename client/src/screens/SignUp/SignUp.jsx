@@ -55,7 +55,7 @@ export default function SignUp(props) {
           />
       </label>
       <br />
-        <Link to='/Home'><button>Submit</button>
+        <Link to='/Home'><button type="submit">Submit</button>
         </Link>
     </form>
           </Layout>

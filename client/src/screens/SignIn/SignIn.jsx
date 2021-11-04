@@ -50,8 +50,8 @@ export default function Login(props) {
         />
       </label>
       <br />
-      <button className='register-button'><Link to='/SignUp'>Register</Link></button>
-        <Link to='/Home'> <button className='submit-button'>Submit</button>
+      <button type="submit" className='register-button'><Link to='/SignUp'>Register</Link></button>
+        <Link to='/Home'> <button type='submit' className='submit-button'>Submit</button>
       </Link>
       </form>
       </Layout>

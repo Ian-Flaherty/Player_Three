@@ -8,7 +8,9 @@ import { getMovies } from "../../services/movies";
 export default function Main(props) {
   
   const [movies, setMovies] = useState([])
-  
+  const [index, setIndex] = useState(0)
+
+
   useEffect(() => {
     const fetchMovies = async () => {
       const movieLists = await getMovies()
@@ -16,6 +18,17 @@ export default function Main(props) {
     }
     fetchMovies()
   }, [])
+  
+  const handleYesClick = () => {
+    setIndex((prevIndex) => {
+      return prevIndex + 1 
+    })
+  }
+  const handleNoClick = () => {
+    setIndex((prevIndex) => {
+      return prevIndex + 1
+    })
+  }
   
   return (
     <Layout>
@@ -28,13 +41,14 @@ export default function Main(props) {
                 {/* <img className="home-holder" src="https://alternativemovieposters.com/wp-content/uploads/2012/12/socialnetworkbg1.jpg" alt='default' /> */}
                 {/* <Movies/> */}
                 {/* {movies} */}
-                {movies.map((movie) => (
+                {/* {movies.map((movie) => ( */}
+
                   <img
                     className="home-holder"
-                    src={movie.image_url}
-                    alt={movie.title}
+                    src={movies[index]?.image_url}
+                    alt={movies[index]?.title}
                     />
-                    ))}
+                    {/* ))} */}
               </div>
               {/* <p className="story-card-text">{title}</p> */}
             </div>
@@ -43,10 +57,10 @@ export default function Main(props) {
         {/* <div className='button-div'> */}
         <div className="buttons-row">
           <div>
-            <button className="no-button">no</button>
+            <button onClick={handleNoClick} className="no-button">no</button>
           </div>
           <div>
-            <button className="yes-button">yes</button>
+            <button onClick={handleYesClick} className="yes-button">yes</button>
           </div>
         </div>
       </div>
