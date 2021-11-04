@@ -18,18 +18,18 @@ export const getLike = async (id) => {
   }
 };
 
-export const createlikes = async (movie) => {
+export const createlikes = async (like) => {
   try {
-    const response = await api.post("/movie-create", movie);
+    const response = await api.post("/like-create", like);
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const updatelikes = async (id, movie) => {
+export const updatelikes = async (id, like) => {
   try {
-    const response = await api.put(`/likes/${id}`, movie);
+    const response = await api.put(`/likes/${id}`, like);
     return response.data;
   } catch (error) {
     throw error;
