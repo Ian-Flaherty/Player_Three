@@ -47,7 +47,7 @@ function App() {
           <SignIn handleLogin={handleLogin}/>
         </Route>
         <Route exact path='/Home'>
-          <Main/>
+            <Main/>
         </Route>
         <Route exact path='/SignUp'>
           <SignUp handleRegister={handleRegister}/>

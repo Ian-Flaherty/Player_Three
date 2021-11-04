@@ -1,3 +1,3 @@
 class Movie < ApplicationRecord
-  belongs_to :likes
+  has_many :likes
 end

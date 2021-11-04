@@ -15,6 +15,6 @@ puts "#{User.count} users created"
 
 puts "#{Movie.count} movies created"
 
-# @like = Like.create(rating: 'True')
+@like = Like.create(user: @admin, movie: @movie, rating: 'true')
 
-# puts "#{Like.count} likes created"
+puts "#{Like.count} likes created"
