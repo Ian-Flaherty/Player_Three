@@ -18,16 +18,17 @@ export const getLike = async (id) => {
   }
 };
 
-export const createlikes = async (like) => {
+export const createLikes = async (likeData) => {
   try {
-    const response = await api.post("/like-create", like);
+    console.log(likeData)
+    const response = await api.post("/likes", { like: likeData });
     return response.data;
   } catch (error) {
     throw error;
   }
 };
 
-export const updatelikes = async (id, like) => {
+export const updateLikes = async (id, like) => {
   try {
     const response = await api.put(`/likes/${id}`, like);
     return response.data;
@@ -36,7 +37,7 @@ export const updatelikes = async (id, like) => {
   }
 };
 
-export const deletelikes = async (id) => {
+export const deleteLikes = async (id) => {
   try {
     const response = await api.delete(`/likes/${id}`);
     return response.data;

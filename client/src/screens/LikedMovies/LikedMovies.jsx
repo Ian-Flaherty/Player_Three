@@ -3,11 +3,17 @@ import Layout from '../../componenets/Layout/Layout'
 import './LikedMovies.css'
 import { useState, useEffect } from 'react'
 import { getLikes } from '../../services/likes'
+import { getMovies } from '../../services/movies'
 // import { setLikes } from '../../services/likes'
 
 export default function LikedMovies(props) {
   // const [ user_id, movie_id, likes ] = props
   const [likes, setLikes] = useState([])
+  const [movies, setMovies] = useState([])
+  //pass down movies as props
+  //in my useeffect set liked movies state to filter only movies the user has liked
+  // map through the liked movies
+
   
   useEffect(() => {
     const fetchLikes = async () => {
@@ -16,6 +22,16 @@ export default function LikedMovies(props) {
     }
     fetchLikes()
   }, [])
+
+
+  // useEffect(() => {
+  //   const fetchMovies = async () => {
+  //     const movieLists = await getMovies(movies.rating === true)
+  //     setMovies(movieLists)
+  //   }
+  //   fetchMovies()
+  // }, [])
+
   
   return (
     <Layout>

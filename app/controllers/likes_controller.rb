@@ -16,7 +16,7 @@ class LikesController < ApplicationController
   # POST /likes
   def create
     @like = Like.new(like_params)
-
+    
     if @like.save
       render json: @like, status: :created, location: @like
     else
@@ -37,15 +37,24 @@ class LikesController < ApplicationController
   def destroy
     @like.destroy
   end
-
+  
+  def add_movie
+    @movie = Movie.find(params[:movie_id])
+    @like = Like.find(params[:id])
+    
+    @like.movies << @movie
+    render json: @like, include: :movies
+  end
+  
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_like
-      @like = Like.find(params[:id])
-    end
+  
+  # Use callbacks to share common setup or constraints between actions.
+  def set_like
+    @like = Like.find(params[:user_id])
+  end
 
-    # Only allow a list of trusted parameters through.
-    def like_params
-      params.require(:like).permit(:user_id, :movie_id, :rating)
-    end
+  # Only allow a list of trusted parameters through.
+  def like_params
+    params.require(:like).permit(:user_id, :movie_id, :rating)
+  end
 end
