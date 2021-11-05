@@ -53,8 +53,8 @@ function App() {
         <Route exact path='/'>
           <SignIn handleLogin={handleLogin}/>
           </Route>
-          <Route exact path='/Edit'>
-            <LikeEdit/>
+          <Route exact path='/Edit/:id'>
+            <LikeEdit currentUser={currentUser}/>
           </Route>
         <Route exact path='/Home'>
             <Main currentUserID={currentUser?.id}/>
@@ -66,7 +66,7 @@ function App() {
             <Settings handleLogout={handleLogout}/>
         </Route>
         <Route exact path='/LikedMovies'>
-            <LikedMovies />
+            <LikedMovies currentUser={currentUser} />
         </Route>
       <div>
       </div>
