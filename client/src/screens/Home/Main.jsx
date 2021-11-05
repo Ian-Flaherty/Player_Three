@@ -21,6 +21,7 @@ export default function Main(props) {
     }
     fetchMovies()
   }, [])
+  
   const handleYesClick = async() => {
     console.log("mi", movies[index])
     const response = await createLikes({

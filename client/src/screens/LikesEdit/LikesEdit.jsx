@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
+import Layout from '../../componenets/Layout/Layout';
 import { updateLikes } from '../../services/likes';
+import './LikesEdit.css'
 
 export default function LikeEdit(props) {
   const [likes, setLikes] = useState([]);
@@ -10,12 +12,13 @@ export default function LikeEdit(props) {
   const { name } = formData;
   const { id } = useParams();
   // const { likes } = props;
+  const history = useHistory();
 
   useEffect(() => {
     const prefillFormData = () => {
       const likeItem = likes.find(like => like.id === Number(id))
       setFormData({
-        name: likeItem.id
+        name: likeItem
       })
     };
     if (likes) {
@@ -30,7 +33,7 @@ export default function LikeEdit(props) {
         return like.id === Number(id) ? newLike : like;
       })
     );
-    // history.push('/Likes');
+    history.push('/Likes');
   };
 
   const handleChange = (e) => {
@@ -40,13 +43,18 @@ export default function LikeEdit(props) {
     });
   };
 
+  
   return (
-    <form
+    <Layout>
+
+    <div className='edit-menu'>
+
+    <form className='this'
       onSubmit={(e) => {
         e.preventDefault();
         handlelikeUpdate(id, formData);
       }}
-    >
+      >
       <h1>Edit like</h1>
       <label>
         Name:
@@ -55,5 +63,7 @@ export default function LikeEdit(props) {
       <br />
       <button>Submit</button>
     </form>
+      </div>
+        </Layout>
   );
 }

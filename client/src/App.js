@@ -40,9 +40,15 @@ function App() {
     removeToken();
     setCurrentUser(null);
   };
+
+  // const handleLikeDelete = async (id) => {
+  //   await deleteLikes(id);
+  //   setLikes((prevState) => prevState.filter((like) => like.id !== id));
+  // };
+
   return (
     <div className="App">
-      {/* <Layout currentUser={currentUser} handleLogout={handleLogout}> */}
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
       <Switch>
         <Route exact path='/'>
           <SignIn handleLogin={handleLogin}/>
@@ -60,12 +66,12 @@ function App() {
             <Settings handleLogout={handleLogout}/>
         </Route>
         <Route exact path='/LikedMovies'>
-          <LikedMovies/>
+            <LikedMovies />
         </Route>
       <div>
       </div>
         </Switch>
-    {/* </Layout> */}
+    </Layout>
     </div>
   );
 }

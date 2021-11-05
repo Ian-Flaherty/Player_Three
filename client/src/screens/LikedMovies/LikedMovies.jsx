@@ -2,14 +2,14 @@ import React from 'react'
 import Layout from '../../componenets/Layout/Layout'
 import './LikedMovies.css'
 import { useState, useEffect } from 'react'
-import { getLikes } from '../../services/likes'
-import { getMovies } from '../../services/movies'
+import { getLikes, deleteLikes } from '../../services/likes'
+// import { getMovies } from '../../services/movies'
 // import { setLikes } from '../../services/likes'
 
 export default function LikedMovies(props) {
   // const [ user_id, movie_id, likes ] = props
   const [likes, setLikes] = useState([])
-  const [movies, setMovies] = useState([])
+  // const [movies, setMovies] = useState([])
   //pass down movies as props
   //in my useeffect set liked movies state to filter only movies the user has liked
   // map through the liked movies
@@ -32,7 +32,11 @@ export default function LikedMovies(props) {
   //   fetchMovies()
   // }, [])
 
-  
+  const handleLikeDelete = async (id) => {
+    await deleteLikes(id);
+    setLikes((prevState) => prevState.filter((like) => like.id !== id));
+  };
+
   return (
     <Layout>
     <div className='liked-movies'>
@@ -46,7 +50,7 @@ export default function LikedMovies(props) {
                   
                     ))} 
           </div>
-          <button>delete</button>
+          <button handleLikeDelete={handleLikeDelete}>delete</button>
           <button>edit</button>
         </div>
       </div>
