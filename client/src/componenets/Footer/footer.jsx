@@ -22,21 +22,6 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="icon">
-        Icons made by{" "}
-        <a href="https://www.freepik.com" title="Freepik">
-          Freepik
-        </a>{" "}
-        from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>{" "}
-        <br></br>
-        Images from{" "}
-        <a href="https://www.unsplash.com" title="Unsplash">
-          www.unsplash.com
-        </a>
-      </div>
     </div>
   );
 };
