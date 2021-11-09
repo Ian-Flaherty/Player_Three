@@ -39,6 +39,9 @@
   flex-direction: row;
   justify-content: center;
   justify-content: space-around;
+  justify-items: center;
+  height: 30px;
+  flex-wrap: wrap;
 }
 
 .curtains-border {
@@ -51,6 +54,7 @@
   width: 170px;
   background-image: url("https://t3.ftcdn.net/jpg/00/46/16/92/360_F_46169218_UD7x3BCcZER8rHageTnAmEW06mYhzlYJ.jpg");
   border: solid 8px black;
+  margin-top: 20px;
 }
 
 .delete-button {
@@ -64,4 +68,34 @@
                          1px -1px 0 #000,
                         -1px -1px 0 #000;
         
+}
+
+.edit-button {
+  background-color: green;
+  border: black solid 2px;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+.rating-answer{
+  /* height: 30px; */
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.vote-register{
+  height: 30px;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  /* border: black solid 2px; */
 }
