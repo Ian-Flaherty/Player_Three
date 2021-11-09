@@ -32,7 +32,9 @@ export default function LikedMovies(props) {
           <div className="liked-stuff">
             {likes.map((like) => (
               <div key={like.id}>
+                <div className="curtains-border">
                 <img className="like-photos" src={like.movie.image_url} alt="nope" style={{ height: '200px', width: '130px', }} />
+                </div>
                 <p>{like.rating ? "yes" : "no"}</p>
                 <div className="buttons-for-likes">
                 <button className="delete-button" onClick={()=>handleLikeDelete(like.id)}>delete</button>
