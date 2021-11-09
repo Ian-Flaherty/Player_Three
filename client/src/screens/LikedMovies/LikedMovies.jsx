@@ -27,14 +27,22 @@ export default function LikedMovies(props) {
   return (
     <Layout>
       <div className="liked-movies">
-        <h1>Liked movies</h1>
+        <div className='zero-line'>
+                <div className='one-line'>
+                  <div className='two-line'>
+        <div className="header-border">
+        <h1 className="header-box">Liked movies</h1>
+        </div>
+        </div>
+            </div>
+            </div>
         <div className="liked-movie-container">
           <div className="liked-stuff">
             {likes.map((like) => (
               <div key={like.id}>
                 <div className="curtains-border">
                 <img className="like-photos" src={like.movie.image_url} alt="nope" style={{ height: '200px', width: '130px', }} />
-                </div>
+                    </div>
                 <div className="buttons-for-likes">
                   <button className="delete-button" onClick={() => handleLikeDelete(like.id)}>delete</button>
                   <div className="vote-register">

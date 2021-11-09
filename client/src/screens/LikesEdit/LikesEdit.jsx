@@ -33,10 +33,10 @@ export default function LikeEdit(props) {
     <div className='edit-menu'>
 
     <div className='this'>
-      <h1>Edit like</h1>
+      <h1 className="edit-border">Edit like</h1>
       <div>
           <div className="main-frame">
-            <div className="movie-poster">
+            <div className="movie-poster-edit">
               <div className="mapped-movies"></div>
               <div>
                 <img
@@ -49,19 +49,19 @@ export default function LikeEdit(props) {
           </div>
         </div>
 
-        <div className="buttons-row">
-          <div>
-            <button onClick={()=>handlelikeUpdate(false)} className="no-button">
-              no
+        <div className="buttons-row-edit">
+          {/* <div> */}
+            <button onClick={()=>handlelikeUpdate(false)} className="no-button-edit">
+              NO
             </button>
-          </div>
-          <div>
-            <button onClick={()=>handlelikeUpdate(true)} className="yes-button">
-              yes
+          {/* </div> */}
+          {/* <div> */}
+            <button onClick={()=>handlelikeUpdate(true)} className="yes-button-edit">
+              YES
             </button>
-          </div>
+          {/* </div> */}
       <br />
-      <button>Submit</button>
+      {/* <button className="submit-edit-button">Submit</button> */}
     </div>
       </div>
       </div>

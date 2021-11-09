@@ -1,6 +1,57 @@
 .edit-menu {
-  margin-top: 25vh;
+  margin-top: 20vh;
+  /* border: black solid 2px; */
+
 }
 .this {
-  margin-top: 25vh;
+  /* margin-top: vh; */
+  /* border: black solid 2px; */
+
 }
+.edit-border {
+  /* border: black solid 2px; */
+}
+
+.buttons-row-edit{
+display: flex;
+flex-direction: row;
+justify-content: center;
+/* border: solid green 4px; */
+align-items: center;
+justify-content: center;
+/* background-color: grey; */
+
+}
+
+.yes-button-edit{
+  color: white;
+display:flex;
+/* border-radius: 50%; */
+background-color: green;
+height: 50px;
+width: 90px;
+justify-content: center;
+align-items: center;
+margin-left: 70px;
+margin-top: 5px;
+font-size: larger;
+font-weight: bold;
+border: black solid 2px;
+
+}
+
+.no-button-edit {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  display: flex;
+  /* border-radius: 50%; */
+  background-color: red;
+  height: 50px;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  border: black solid 2px;
+  
+  }

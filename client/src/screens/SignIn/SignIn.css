@@ -11,4 +11,21 @@
   border: solid black 5px;
 }
 
+.register-button{
+/* height: 20px;
+width:60px; */
+border: solid black 5px;
+
+}
+
+.submit-button {
+  border: solid black 5px;
+
+}
+.login-buttons {
+  border: solid black 5px;
+
+  justify-content: center;
+align-items: center;
+}
 

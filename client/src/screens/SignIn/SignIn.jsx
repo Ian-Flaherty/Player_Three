@@ -29,7 +29,8 @@ export default function Login(props) {
         handleLogin(formData);
       }}
     >
-      <h3>Login</h3>
+        <h3>Login</h3>
+        <div className="sign-in-layout">
       <label>
         Username:
         <input
@@ -48,11 +49,13 @@ export default function Login(props) {
           value={password}
           onChange={handleChange}
         />
-      </label>
-      <br />
+        </label>
+        </div>
+        <br />
+        <div className="login-buttons">
       <Link to='/SignUp'><button className='register-button'>Register</button></Link>
       <button className='submit-button'>Submit</button>
-      
+      </div>
       </form>
       </Layout>
   );

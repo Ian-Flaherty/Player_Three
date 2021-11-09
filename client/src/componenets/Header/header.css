@@ -30,9 +30,17 @@ text-decoration: none;
 
 .liked-movies-link{
   font-size: 15px;
-
+  color: white;
+  text-decoration: none;
 }
 
 .Settings-link {
   font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-title{
+  color: white;
+  text-decoration: none;
 }
