@@ -57,6 +57,7 @@ margin-top: 30px;
 .home-holder {
   height: 350px;
   width: 240px;
+  border: solid black 4px;
 }
 .green-check{
   height: 70px;

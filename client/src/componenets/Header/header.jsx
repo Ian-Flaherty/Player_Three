@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
+    <div className="nav-wrap">
     <nav>
       <div className='nav'>
         <NavLink className='liked-movies-link' to='/LikedMovies'>Likes</NavLink>
@@ -13,5 +14,6 @@ export default function Header() {
       
     </div>
     </nav>
+    </div>
   )
 }

@@ -7,6 +7,7 @@ import { getMovies } from "../../services/movies";
 import { createLikes } from "../../services/likes";
 //lift state up so i can pass down state to main jsx and likes
 
+
 export default function Main(props) {
   const [movies, setMovies] = useState([]);
   const [index, setIndex] = useState(0);

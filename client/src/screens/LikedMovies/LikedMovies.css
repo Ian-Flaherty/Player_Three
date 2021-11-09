@@ -1,5 +1,5 @@
 .liked-movies {
-  margin-top: 25vh;
+  margin-top: 20vh;
 }
 
 .imug {
@@ -7,14 +7,36 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
-
   height:200px;
   width: 130px;
+  
 }
 
 .liked-stuff {
   display: flex;
+  flex-wrap: wrap;
+  padding: 80px;
+  justify-items: left;
   justify-content: space-around;
-  justify-items: center;
   
+  
+}
+
+.like-photos {
+  border: solid black 4px;
+  height: 200px;
+  width: 130px;
+  display: flex;
+  padding: 20px;
+  background-image: url("https://t3.ftcdn.net/jpg/00/46/16/92/360_F_46169218_UD7x3BCcZER8rHageTnAmEW06mYhzlYJ.jpg");
+}
+/* 
+.edit-button {
+  height: 30px;
+} */
+.buttons-for-likes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
 }
