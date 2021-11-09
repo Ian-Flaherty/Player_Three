@@ -19,6 +19,7 @@ width: auto;
 display: flex;
 width:80%;
 
+
 }
 
 .buttons-row {
@@ -38,6 +39,8 @@ height: 50px;
 width: 50px;
 justify-content: center;
 align-items: center;
+margin-left: 70px;
+margin-top: 30px;
 }
 
 .no-button {
@@ -48,9 +51,24 @@ height: 50px;
 width: 50px;
 justify-content: center;
 align-items: center;
+margin-top: 30px;
 }
 
 .home-holder {
-  height: 200px;
-  width: 140px;
+  height: 350px;
+  width: 240px;
+}
+.green-check{
+  height: 70px;
+  width:  70px;
+  border-radius: 50%;
+  border: 50% solid black 2px;
+}
+
+.red-x{
+  height: 70px;
+  width:  800px;
+  border-radius: 50%;
+  border: 50% solid black 2px;
+  
 }

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
   background-color: rgb(5, 5, 5);
   color: rgb(169, 170, 215);
   text-align: center;

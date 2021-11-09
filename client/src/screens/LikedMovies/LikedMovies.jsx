@@ -4,17 +4,12 @@ import "./LikedMovies.css";
 import { useState, useEffect } from "react";
 import { getLikes, deleteLikes } from "../../services/likes";
 import { Link } from "react-router-dom";
-// import { getMovies } from '../../services/movies'
-// import { setLikes } from '../../services/likes'
+
 
 export default function LikedMovies(props) {
   const { currentUser } = props
   const [likes, setLikes] = useState([]);
-  // const [movies, setMovies] = useState([])
-  //pass down movies as props
-  //in my useeffect set liked movies state to filter only movies the user has liked
-  // map through the liked movies
-
+ 
   useEffect(() => {
     const fetchLikes = async () => {
       const likeLists = await getLikes();
@@ -23,13 +18,6 @@ export default function LikedMovies(props) {
     if (currentUser){ fetchLikes() };
   }, [currentUser]);
 
-  // useEffect(() => {
-  //   const fetchMovies = async () => {
-  //     const movieLists = await getMovies(movies.rating === true)
-  //     setMovies(movieLists)
-  //   }
-  //   fetchMovies()
-  // }, [])
 
   const handleLikeDelete = async (id) => {
     await deleteLikes(id);
