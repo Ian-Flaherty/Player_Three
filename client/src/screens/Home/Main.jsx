@@ -1,11 +1,9 @@
 import React from "react";
 import "./Main.css";
 import Layout from "../../componenets/Layout/Layout";
-// import Movies from "../../componenets/Movies/Movies";
 import { useState, useEffect } from "react";
 import { getMovies } from "../../services/movies";
 import { createLikes } from "../../services/likes";
-//lift state up so i can pass down state to main jsx and likes
 
 
 export default function Main(props) {
